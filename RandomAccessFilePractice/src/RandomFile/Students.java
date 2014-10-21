@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Students {
 	RandomAccessFile file;
-	int section=14;
+	int section=32;
 	
 	public Students(){
 		file=null;
@@ -29,7 +29,6 @@ public class Students {
 		int StudentId=file.readInt();
 		double GPA=file.readDouble();
 		String name=file.readUTF();
-		
 		Scanner scan=new Scanner(name);
 		String first=new String();
 		String second=new String();
